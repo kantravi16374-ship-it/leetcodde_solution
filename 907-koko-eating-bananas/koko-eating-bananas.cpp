@@ -2,7 +2,7 @@ class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
         int left=1;
-        int right=*std::max_element(piles.begin(),piles.end());
+        int right=*::max_element(piles.begin(),piles.end());
         int ans=right;
         while(left<=right){
             int mid=left+(right-left)/2;
